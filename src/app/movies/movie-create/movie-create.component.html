@@ -1,0 +1,54 @@
+<h1>Create Movie</h1>
+
+<form action="" (ngSubmit)="createMovie()" [formGroup]="movieForm">
+
+  <div class="mb-3">
+    <label for="title" class="form-label">ID</label>
+    <input  type="text" name="id" class="form-control" formControlName="id">
+
+  </div>
+
+  <div class="mb-3">
+    <label for="title" class="form-label">Title</label>
+    <input  type="text" name="title" class="form-control" formControlName="title">
+    <div class="alert alert-danger mt-1" *ngIf="movieForm.get('title').invalid && movieForm.get('title').touched">
+        <p *ngIf="movieForm.get('title').errors['required']">Gerekli alan !</p>
+        <p *ngIf="title.errors['minlength']">Min 5 karakter girmelisin</p>
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="description" class="form-label">Description</label>
+    <textarea  name="description" class="form-control" formControlName="description"></textarea>
+    <!-- <div class="alert alert-danger mt-1" *ngIf="description.invalid && description.touched">
+      <p *ngIf="description.errors['required']">Gerekli alan !</p>
+      </div> -->
+ </div>
+
+  <div class="mb-3">
+    <label for="imageUrl" class="form-label" >imageUrl</label>
+    <input  name="imageUrl" type="text" class="form-control" formControlName="imageUrl">
+    <!-- <div class="alert alert-danger mt-1" *ngIf="imageUrl.invalid && imageUrl.touched">
+      <p *ngIf="imageUrl.errors['required']">Gerekli alan !</p>
+     </div> -->
+  </div>
+
+  <div class="mb-3">
+    <label for="categoryId" class="form-label">Kategori</label>
+    <select    class="form-select" name="categoryId" formControlName="categoryId">
+      <option value="">Seçiniz</option>
+      <option value="" *ngFor="let item of categories" [value]="item.id">{{item.categoryName}}</option>
+    </select>
+    <!-- <div class="alert alert-danger mt-1" *ngIf="categoryId.invalid && categoryId.touched">
+      <p *ngIf="categoryId.errors['required']">Gerekli alan !</p>
+        </div> -->
+  </div>
+
+  <button  type="submit" class="btn btn-primary" >Create</button>
+  <button class="btn btn-warning" (click)="clearForm()">Clear</button>
+
+</form>
+
+
+
+<!-- (click)="createMovie(title,description,imageUrl,categoryId)" -->

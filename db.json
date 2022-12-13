@@ -1,0 +1,76 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "film 1",
+      "description": "Lorem ipsum dolor sit amet consectetur adipism explicabo quibusdam, repudiandae cupiditate error facere dolore id, omnis ex, obcaecati earum! Rerum consectetur autem veritatis libero doloribus!",
+      "imageUrl": "assets/img/1.jpeg",
+      "isPopular": 1,
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "title": "film 2",
+      "description": "Lorem ipsum dolor sit amet consectetur adipism explicabo quibusdam, repudiandae cupiditate error facere dolore id, omnis ex, obcaecati earum! Rerum consectetur autem veritatis libero doloribus!",
+      "imageUrl": "assets/img/2.jpeg",
+      "isPopular": 1,
+      "categoryId": 2
+    },
+    {
+      "id": 3,
+      "title": "film 3",
+      "description": "cabo quibusdam, repudiandae cupiditate error facere dolore id, omnis ex, obcaecati earum! Rerum consectetur autem veritatis libero doloribus!",
+      "imageUrl": "assets/img/3.jpeg",
+      "isPopular": 0,
+      "categoryId": 3
+    },
+    {
+      "id": 4,
+      "title": "film 4",
+      "description": "cupiditate error facere dolore id, omnis ex, obcaecati earum! Rerum consectetur autem veritatis libero doloribus!",
+      "imageUrl": "assets/img/4.jpeg",
+      "isPopular": 0,
+      "categoryId": 4
+    },
+    {
+      "id": 5,
+      "title": "asdasdsa",
+      "description": "asdasd",
+      "imageUrl": "assets/img/1.jpeg",
+      "isPopular": false,
+      "datePublished": 1669732225963,
+      "categoryId": "2"
+    },
+    {
+      "id": 6,
+      "title": "asdwqdwq",
+      "description": "asdadqw",
+      "imageUrl": "assets/img/QWD",
+      "isPopular": false,
+      "datePublished": 1669733019904,
+      "categoryId": "1"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "Macera"
+    },
+    {
+      "id": 2,
+      "categoryName": "Romantik"
+    },
+    {
+      "id": 3,
+      "categoryName": "Komedi"
+    },
+    {
+      "id": 4,
+      "categoryName": "Dram"
+    },
+    {
+      "id": 5,
+      "categoryName": "Savaş"
+    }
+  ]
+}

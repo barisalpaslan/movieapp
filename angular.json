@@ -5,7 +5,12 @@
   "projects": {
     "movieapp": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+
+      },
+      "i18n": {
+        "sourceLocale": "tr"
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -25,9 +30,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "node_modules/alertifyjs/build/alertify.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -94,5 +103,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "9866adb4-3c15-4c02-b491-073a1e2ca44a"
   }
 }
